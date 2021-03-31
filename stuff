@@ -1,0 +1,50 @@
+#Float, Integer, String --> Primitives
+print(5);print("Hello");print(2 + 2 );print("What is this?")
+print(4.43 + 3.34363254242) #float(ing point decimal) 
+print(2 * 4 * 5) # * is multiplication 
+print(100/2/4) # / is division
+print(2 ** 5) # 2 to the 5th power 
+print(100-4-5-50)
+print("I love" + " New York.")
+print("New York! " * 3)
+print(2 + int("32"))
+print("2" + str(2))
+print(int(float("4.99")))
+
+fname = "Charlie" #string 
+lname = "Brown" #strings
+age = 10 #integer
+print(fname,lname,age)
+print(fname + " " + lname + " is " + str(age) + " years old.") #longer string 
+#Charlie Brown is 10 years old.
+print("{} {} is {} years old.".format(fname,lname,age)) #python 3-ish 
+print("%s %s is %s years old." % (fname,lname,age)) #python 2-ish 
+MyBio = f"{fname} {lname} is {age} years old."
+print(MyBio)
+
+name = "John"
+surname = "Rambo"
+boro = "Queens"
+age = 55
+pet = "cat"
+pet_name = "Mr. Wiggles"
+since = 2005
+#John Rambo is 55 years old and lives with his cat, Mr. Wiggles. They have lived in Queens, NY, since 2005.
+#John Rambo is 55 and has lived in Queens since 2005. He lives with his hairless cat, Mr. Wiggles.
+short_bio = "%s %s is ....."
+short_bio = "{} {} is ....."
+
+print("{} is a {} year old {}.".format(pet_name,age-50,pet))
+
+print("100 divided by 6 is equal to {:.2f}.".format(100/6)) #specifier
+
+# built in python functions print, str 
+#user defined function
+def Mult3(x,y,z):
+  P = x * y * z 
+  return P
+
+
+print(Mult3(4,5,6))
+
+#Area of Triangle 
