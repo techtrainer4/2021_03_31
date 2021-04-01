@@ -1,52 +1,79 @@
-print(4 == 4) #True Boolean True False
-print(2 * 2 == 2 + 2 == 3 + 1)
-print("5" != 5)
-print(5 > 4)
-print(10 < 3)
+# # beatles = ["john","paul","george","ringo"]
+# # # Beatles = []
+# # # for b in beatles:
+# # #   Beatles.append(b.title())
 
-age = 12
-#G,PG,PG13,R
-rating = "PG13"
+# # #List Comprehensions
+# # print([b.title() for b in beatles])
+# # nums = [1,2,3,4,5]
+# # nums_sq = [x**2 for x in nums]
+# # print(nums_sq)
 
-def Movie_Permission(age,rating):
-  can = "You can watch this movie!"
-  cant = "You cannot watch this movie!"
-  parent = "You might need a parent to watch this."
-  if age >= 18 and rating == "R":
-    print(can)
-  elif age >= 13 and rating == "PG13":
-    print(can)
-  elif age >= 5 and rating == "PG":
-    print(parent)
-  elif rating == "G":
-    print(can)
-  else: 
-    print(cant)
-  
+# # #While Loop
+# # your_name = input("What is your name? ")
+# # your_age = input("What is your age?")
+# # your_age = int(your_age)
+# # print(type(your_age))
 
-Movie_Permission(14,"PG13")
+# # pizza = input("Do you like pizza? Y/N? ")
+# # while pizza != "Y":
+# #   print("Why don't you like pizza?")
+# #   pizza = input("Do you like pizza? Y/N? ")
 
+# # foods = [] 
+# # while len(foods) < 3:
+# #   f = input("Please enter on of your 3 favorite foods.")
+# #   foods.append(f)
 
-rain = False
-cold = False
-wind = False
-warm_clothes = False 
+# # print(foods)
+# magic_num = "blue"
+# money = 5
+# while money > 0:
+#   guess = input("What is the magic number?")
+#   guess = int(guess)
+#   if guess == magic_num:
+#     print("You win!!!")
+#     money = money + 1
+#     magic_num = magic_num + 1
+#   else:
+#     print("That's not it!")
+#     money = money - 1 #decrementing 
+#     #money = money + 1 #incrementing
 
-def Can_I_Go_Out(rain,cold,wind,warm_clothes):
-  can = "You can go out to eat."
-  cant = "You can't go out to eat."
-  if cold and warm_clothes:
-    print(can)
-  elif wind and warm_clothes: 
-    print(can)
-  elif not rain and not cold and not wind:
-    print(can)
+# if money == 0:
+#   print("Game Over. Better luck next time.")
+
+nums = [5,1,1,1,5]
+repeats = [] 
+for i in range(5):
+  if nums[i] in nums[i + 1:]:
+    repeats.append(nums[i])
+print(repeats)
+
+print(nums.count(5))
+
+animals = ["cat","Dog"]
+for a in animals:
+  if a[0] == a[0].upper():
+    print("%s is capitalized" % a)
   else:
-    print(cant)
+    print("%s is not capitalized" % a)
 
-Can_I_Go_Out(False,True,True,False)
+MoodTracker = [] 
+while len(MoodTracker) < 2:
+  mood = input("How are you feeling?")
+  Date = input("What is the date m/d/y?")
+  Time = input("What is the time now?")
+  entry = [mood, Date, Time]
+  MoodTracker.append(entry)
 
 
+print(MoodTracker) #not indented
+print(MoodTracker[1][0])
+
+
+
+  
 
 
 
